@@ -1,0 +1,8 @@
+FROM python:3.10
+
+RUN apt-get update
+
+# Make sure pip is installed.
+RUN python3 -m ensurepip
+
+RUN apt-get install -y python3-dev
