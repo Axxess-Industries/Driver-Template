@@ -6,5 +6,8 @@ RUN apt-get update
 RUN python3 -m ensurepip
 
 RUN apt-get install -y python3-dev
+RUN apt-get install -y swig
+RUN apt-get install -y luajit
 RUN apt-get install -y xmlstarlet
+RUN pip install m2crypto
 RUN pip install lxml
