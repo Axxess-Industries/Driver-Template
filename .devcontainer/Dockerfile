@@ -7,3 +7,4 @@ RUN python3 -m ensurepip
 
 RUN apt-get install -y python3-dev
 RUN apt-get install -y xmlstarlet
+RUN pip install lxml
