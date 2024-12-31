@@ -1,13 +1,6 @@
 #!/bin/sh
-
-if [ -d $BASE_PATH/drivers-driverpackager ]; then
-    if [ "$(ls -A $BASE_PATH/drivers-driverpackager)" ]; then
-        echo "Driver packager already cloned in repo."
-        exit 0
-    else
-        echo "Driver packager folder is empty. Delete the drivers-driverpackager folder then rebuild devcontainer."
-    fi
-else
-    echo "Driver packager not found in repo. Cloning driver-packager to repo."
-    git clone $DRIVER_PACKAGER_REPO $BASE_PATH/drivers-driverpackager
-fi
+modified_date="xmlstarlet edit --inplace --omit-decl --update '/devicedata/modified' --value \"`date +'%m/%d/%Y %I:%M %p'`\" $INPUT_PATH/driver.xml"
+eval $modified_date
+cmd="python3 $BASE_PATH/drivers-driverpackager/dp3/driverpackager.py -v $INPUT_PATH $C4Z_PATH" 
+eval $cmd
+mv -v -u $C4Z_PATH/source.c4z $C4Z_PATH/$DRIVER_NAME

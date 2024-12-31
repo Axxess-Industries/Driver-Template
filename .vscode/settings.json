@@ -1,7 +1,9 @@
 {
     "cSpell.words": [
         "BINDINGID",
+        "devicedata",
         "ensurepip",
+        "inplace",
         "LATEINIT",
         "libreadline",
         "luacheck",
@@ -9,6 +11,7 @@
         "LUAJIT",
         "LUAROCKS",
         "lxml",
+        "manualsquish",
         "pcount",
         "Statsd",
         "stds",
