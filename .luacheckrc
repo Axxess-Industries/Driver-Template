@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 --[[=============================================================================
     File is: .luacheckrc
 
@@ -92,6 +93,7 @@ stds.Control4 = {
 -- Driver specific
 
 -- Driver-defined globals
+---@diagnostic disable-next-line: undefined-global
 stds.Driver = {
     read_globals = {
     },

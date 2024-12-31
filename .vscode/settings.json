@@ -9,14 +9,18 @@
         "LUAJIT",
         "LUAROCKS",
         "lxml",
+        "pcount",
+        "Statsd",
+        "stds",
         "toboolean",
         "xmlstarlet",
         "zxpf"
     ],
     "Lua.diagnostics.globals": [
-        "ignore",
-        "std",
-        "allow_defined_top",
-        "max_line_length"
-    ]
+        "Main",
+        "Module",
+        "Output",
+        "C4",
+        "PersistData"
+    ],
 }

@@ -1,3 +1,4 @@
+---@diagnostic disable: inject-field
 --[[=============================================================================
 	File is: encryption.lua
 	Copyright 2021 Snap One, LLC. All Rights Reserved.
@@ -17,7 +18,7 @@ AES_CIPHER_OPTIONS = {
 }
 
 function ON_DRIVER_EARLY_INIT.Encryption(strDit)
-	if(DRIVER_ENCRYPTION_KEY ~= nil) then
+	if (DRIVER_ENCRYPTION_KEY ~= nil) then
 		Encryption:SetEncryptionKey(DRIVER_ENCRYPTION_KEY)
 	end
 end

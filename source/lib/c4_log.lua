@@ -1,3 +1,4 @@
+---@diagnostic disable: inject-field
 ---
 --- c4_log Class
 ---
