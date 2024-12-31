@@ -1,0 +1,22 @@
+{
+    "cSpell.words": [
+        "BINDINGID",
+        "ensurepip",
+        "LATEINIT",
+        "libreadline",
+        "luacheck",
+        "luacheckrc",
+        "LUAJIT",
+        "LUAROCKS",
+        "lxml",
+        "toboolean",
+        "xmlstarlet",
+        "zxpf"
+    ],
+    "Lua.diagnostics.globals": [
+        "ignore",
+        "std",
+        "allow_defined_top",
+        "max_line_length"
+    ]
+}
